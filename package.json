@@ -4,7 +4,7 @@
   "description": "Common Brightspace eslint configs.",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "exit 0"
   },
   "repository": {
     "type": "git",
