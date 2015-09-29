@@ -1,0 +1,13 @@
+sudo: false
+language: node_js
+node_js:
+- '0.12'
+deploy:
+  provider: npm
+  email: d2ltravisdeploy@d2l.com
+  api_key:
+    secure: TCRKHp6HU+iEuZgG7KzL5VSZHvBxSEBDM5QpyDWGvb26yO7jDgcen6pClskUXFHWV0IIIWE5sC0bbJsn1UyN791hIe9Vq58I9VXHurykYSPtXMFcz9fTCLarO9Vfn7kfGqiHAR0kdOaKtx+ljgGbPCqQsoAhnrzmaE4EdHAbmR0XzdEplLVXLKGipiI+Byb8oSSCDKte55mC3QpI15tHeYQFZ3eOLi4VJcqx4fuEAzdBCq7Ac0NExiC4eokhSk+PCxQBlz4vkYf5D8r6N0iPIFiIS/N3bHScu7ejQi3o99OSMKIVdp2cW4fsuc216iFz4XZMqXlHwYcSTpmhxYiR6Y31fGtFXX5X33BRhyiTsjxA2iBlSCCwpV9C3C8kYkQDqrPDOndNjI0V3WXGA+HksW3Z9iCGx0NXImrUBKtG9nURyrjuaaupy5vBP83ky+Aj27yBfGCIpCtIjYWIjNmr6skB8dyN6KJl3oc5DTSAhoR4uMHH/r/kHAbyKbVUsNb6hhW0dNTQ9GGimxuBtJpR6UG28xcwqe42XNKMrQccrbYBZghqy2e9DvG8/7NaEtVGOQ1I5kLDux/QEOJ8OtJVgGl8pQWBsrPZFEBAUKeM1ufBSRhKRZslZAo59HvRymSSeVdikh8acYyz6taOwAST//YXX5CCwwa7zc6T1fIL4fc=
+  on:
+    tags: true
+    repo: Brightspace/eslint-config-brightspace
+    all_branches: true
