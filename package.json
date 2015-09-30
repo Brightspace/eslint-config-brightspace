@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-brightspace",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Common Brightspace eslint configs.",
   "main": "index.js",
   "scripts": {
@@ -21,10 +21,12 @@
     "url": "https://github.com/Brightspace/eslint-config-brightspace/issues"
   },
   "homepage": "https://github.com/Brightspace/eslint-config-brightspace",
+  "peerDependencies": {
+    "eslint-plugin-react": "^3.5.0"
+  },  
   "devDependencies": {},
   "dependencies": {
     "eslint": "^1.5.1",
-    "eslint-plugin-react": "^3.5.0",
     "extend": "^3.0.0"
   }
 }
