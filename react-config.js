@@ -3,15 +3,17 @@ var baseConfig = require('./index'),
 
 var reactConfig = {
   "ecmaFeatures": {
-    "jsx": true,
-    "modules": true
+    "jsx": true
   },
   "env": {
     "browser": true,
     "es6": true,
     "jest": true,
     "node": true
-  }
+  },
+  "plugins": [
+    "react"
+  ]
 };
 
 module.exports = extend(true, baseConfig, reactConfig);
