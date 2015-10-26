@@ -3,7 +3,8 @@ var baseConfig = require('./index'),
 
 var reactConfig = {
   "ecmaFeatures": {
-    "jsx": true
+    "jsx": true,
+    "modules": true
   },
   "env": {
     "browser": true,
