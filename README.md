@@ -22,7 +22,7 @@ Specify the `extends` property in the `.eslintrc` file:
 ```json
 {
   "extends": "brightspace",
-  ...
+  // ...
 }
 ```
 
@@ -37,7 +37,7 @@ Specify the desired config for the `extends` property:
 ```json
 {
   "extends": "brightspace/react-config",
-  ...
+  // ...
 }
 ```
 
