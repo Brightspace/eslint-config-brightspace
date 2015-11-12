@@ -20,6 +20,7 @@ module.exports = {
     "no-undef": 2,
     "no-unreachable": 2,
     "no-unused-vars": [2, {"vars": "all", "args": "after-used"}],
+    "prefer-const": 2, // nr
     "quotes": [2, "single", "avoid-escape"], // nr
     "semi": 2, // nr
     "space-after-keywords": 2, // nr
