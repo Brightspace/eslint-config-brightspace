@@ -19,23 +19,28 @@ Simply specify the `extends` property in the `.eslintrc` file as shown below. **
 
 Specify the `extends` property in the `.eslintrc` file:
 
-```javascript
+```json
 {
   "extends": "brightspace",
   ...
 }
 ```
 
-### React Config
+### Environment Specific Configs
 
-Specify the `react-config` config for the `extends` property: 
+Specify the desired config for the `extends` property: 
 
-```javascript
+* `browser-config` : sets up browser globals
+* `node-config` : sets up node globals including es6 env features
+* `react-config` : sets up env for jsx and es6, including globals for jest
+
+```json
 {
   "extends": "brightspace/react-config",
   ...
 }
 ```
+
 
 The [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) plugin is included witht this configuration, which enables use of the rules it provides.
 
