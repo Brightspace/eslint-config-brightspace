@@ -23,11 +23,10 @@ module.exports = {
     "prefer-const": 2, // nr
     "quotes": [2, "single", "avoid-escape"], // nr
     "semi": 2, // nr
-    "space-after-keywords": 2, // nr
+    "keyword-spacing": 2,
     "space-before-blocks": [2, "always"], // nr
     "space-before-function-paren": [2, "never"], //nr
     "space-infix-ops": 2, // nr
-    "space-return-throw-case": 2, // nr
     "strict": [2, "global"], // nr
     "valid-typeof": 2
   }
