@@ -40,7 +40,7 @@ Specify the desired config for the `extends` property:
 ```
 
 
-The [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) plugin is included witht this configuration, which enables use of the rules it provides.
+To use `react-config`, consumers should install the [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) plugin to enable use of the rules it provides.
 
 
 See the [eslint rules](http://eslint.org/docs/rules/) for more details on rule configuration.  See the [eslint shareable configs](http://eslint.org/docs/developer-guide/shareable-configs.html) for more details on creating configs.
