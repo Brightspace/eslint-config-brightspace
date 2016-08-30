@@ -22,8 +22,10 @@
   },
   "homepage": "https://github.com/Brightspace/eslint-config-brightspace",
   "devDependencies": {},
+  "peerDependencies": {
+    "eslint": "^2.3.0 || ^3.0.0"
+  },
   "dependencies": {
-    "eslint": "^2.3.0",
     "extend": "^3.0.0"
   }
 }
