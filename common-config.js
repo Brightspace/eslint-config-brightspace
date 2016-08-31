@@ -2,13 +2,14 @@
 // nr = not as per eslint:recommended
 
 module.exports = {
+  "extends": "eslint:recommended",
   "rules": {
     "comma-spacing": 2, // nr
     "eol-last": 2, // nr
     "eqeqeq": 2, // nr
     "indent": [2, "tab", { "SwitchCase": 1 }], // nr
     "new-parens": 2, // nr
-    "no-debugger": 2, 
+    "no-debugger": 2,
     "no-dupe-args": 2,
     "no-dupe-keys": 2,
     "no-duplicate-case": 2,
