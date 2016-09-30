@@ -1,4 +1,4 @@
-var baseConfig = require('./polymer-config'),
+var polymerConfig = require('./polymer-config'),
 	extend = require('extend');
 
 var wctConfig = {
