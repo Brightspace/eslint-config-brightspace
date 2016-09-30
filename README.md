@@ -33,6 +33,7 @@ Specify the desired config for the `extends` property:
 * `node-config` : sets up node globals including es6 env features
 * `react-config` : sets up env for jsx and es6, including globals for jest
 * `polymer-config` : sets up env for browser globals and polymer web components
+* `wct-config` : sets up env for web component tester tests
 
 ```json
 {
