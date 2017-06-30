@@ -1,11 +1,7 @@
-var baseConfig = require('./index'),
-	extend = require('extend');
-
-var nodeConfig = {
+module.exports = {
+  "extends": "./index.js",
   "env": {
     "es6": true,
     "node": true
   }
 };
-
-module.exports = extend(true, baseConfig, nodeConfig);
