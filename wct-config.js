@@ -6,6 +6,7 @@ module.exports = {
   },
   "globals": {
     "a11ySuite": true,
+    "assert": true,
     "fixture": true,
     "flush": true,
     "expect": true,
