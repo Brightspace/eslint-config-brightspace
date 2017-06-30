@@ -1,10 +1,6 @@
-var baseConfig = require('./index'),
-	extend = require('extend');
-
-var browserConfig = {
+module.exports = {
+  "extends": "./index.js",
   "env": {
     "browser": true
   }
 };
-
-module.exports = extend(true, baseConfig, browserConfig);

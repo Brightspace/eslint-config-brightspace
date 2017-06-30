@@ -1,7 +1,5 @@
-var baseConfig = require('./index'),
-	extend = require('extend');
-
-var polymerConfig = {
+module.exports = {
+  "extends": "./index.js",
   "env": {
     "browser": true
   },
@@ -16,5 +14,3 @@ var polymerConfig = {
     "strict": 0
   }
 };
-
-module.exports = extend(true, baseConfig, polymerConfig);

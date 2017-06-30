@@ -1,7 +1,5 @@
-var polymerConfig = require('./polymer-config'),
-	extend = require('extend');
-
-var wctConfig = {
+module.exports = {
+  "extends": "./polymer-config.js",
   "env": {
     "es6": true,
     "mocha": true
@@ -16,5 +14,3 @@ var wctConfig = {
     "WCT": true
   }
 };
-
-module.exports = extend(true, polymerConfig, wctConfig);
