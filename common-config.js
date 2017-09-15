@@ -8,7 +8,7 @@ module.exports = {
     "eqeqeq": 2, // nr
     "indent": [2, "tab", { "SwitchCase": 1 }], // nr
     "new-parens": 2, // nr
-    "no-debugger": 2, 
+    "no-debugger": 2,
     "no-dupe-args": 2,
     "no-dupe-keys": 2,
     "no-duplicate-case": 2,
@@ -25,7 +25,8 @@ module.exports = {
     "semi": 2, // nr
     "keyword-spacing": 2,
     "space-before-blocks": [2, "always"], // nr
-    "space-before-function-paren": [2, "never"], //nr
+	"space-before-function-paren": [2, "never"], //nr
+	"space-in-parens": [2, "never"],
     "space-infix-ops": 2, // nr
     "strict": [2, "global"], // nr
     "valid-typeof": 2
