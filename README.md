@@ -17,7 +17,7 @@ Simply specify the `extends` property in the `.eslintrc` file as shown below. **
 
 ### Default Config
 
-Specify the `extends` property in the `.eslintrc` file:
+Specify the `extends` property in the `.eslintrc.json` file:
 
 ```json
 {
