@@ -11,7 +11,7 @@ module.exports = {
     "D2L": false
   },
   "rules": {
-    "strict": 0,
+    "strict": [2, "never"],
     "lit/no-duplicate-template-bindings": 2,
     "lit/no-legacy-template-syntax": 2,
     "lit/no-template-bind": 2,
