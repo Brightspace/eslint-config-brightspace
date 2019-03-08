@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-brightspace",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Common Brightspace eslint configs.",
   "main": "index.js",
   "scripts": {
