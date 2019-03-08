@@ -8,7 +8,8 @@ module.exports = {
     "lit", "html"
   ],
   "globals": {
-    "D2L": false
+    "D2L": false,
+    "Promise": false
   },
   "rules": {
     "strict": [2, "never"],
