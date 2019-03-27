@@ -12,6 +12,8 @@ module.exports = {
     "Promise": false
   },
   "rules": {
+    "no-var": 2,
+    "prefer-const": 2,
     "strict": [2, "never"],
     "lit/no-duplicate-template-bindings": 2,
     "lit/no-legacy-template-syntax": 2,
