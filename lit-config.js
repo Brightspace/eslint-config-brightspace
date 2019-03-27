@@ -2,7 +2,8 @@ module.exports = {
   "extends": "./index.js",
   "parser": "babel-eslint",
   "env": {
-    "browser": true
+    "browser": true,
+	"es6": true
   },
   "plugins": [
     "lit", "html"
@@ -12,6 +13,16 @@ module.exports = {
     "Promise": false
   },
   "rules": {
+    "arrow-spacing": 2,
+    "no-confusing-arrow": 2,
+    "no-duplicate-imports": 2,
+    "no-useless-constructor": 2,
+    "no-var": 2,
+    "prefer-arrow-callback": 2,
+    "prefer-const": 2,
+    "prefer-spread": 2,
+    "prefer-template": 2,
+    "sort-imports": [2, { "ignoreCase": true }],
     "strict": [2, "never"],
     "lit/no-duplicate-template-bindings": 2,
     "lit/no-legacy-template-syntax": 2,
