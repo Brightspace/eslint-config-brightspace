@@ -1,3 +1,5 @@
+const { sortMemberRules } = require('./sort-member-config');
+
 module.exports = {
   "extends": "./index.js",
   "parser": "babel-eslint",
@@ -5,13 +7,15 @@ module.exports = {
     "browser": true
   },
   "plugins": [
-    "html"
+	"html",
+	"sort-class-members"
   ],
   "globals": {
     "D2L": false,
     "Polymer": false
   },
   "rules": {
-    "strict": 0
+	"strict": 0,
+	...sortMemberRules
   }
 };
