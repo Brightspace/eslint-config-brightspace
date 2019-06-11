@@ -46,9 +46,9 @@ Specify the desired config for the `extends` property:
 
 To use `react-config`, consumers should install the [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) plugin to enable use of the rules it provides.
 
-To use `polymer-config`, consumers should install the [eslint-plugin-html](https://github.com/BenoitZugmeyer/eslint-plugin-html) plugin to extract and lint JavaScript contained in `.html` web component files.
+To use `polymer-config`, consumers should install the [eslint-plugin-html](https://github.com/BenoitZugmeyer/eslint-plugin-html) plugin to extract and lint JavaScript contained in `.html` web component files. [eslint-plugin-sort-class-members](https://github.com/bryanrsmith/eslint-plugin-sort-class-members) plugin is required to ensure consistency in class format
 
-To use `lit-config`, consumers should install the [eslint-plugin-html](https://github.com/BenoitZugmeyer/eslint-plugin-html) and [eslint-plugin-lit](https://github.com/43081j/eslint-plugin-lit) plugins.
+To use `lit-config`, consumers should install the [eslint-plugin-html](https://github.com/BenoitZugmeyer/eslint-plugin-html), [eslint-plugin-sort-class-members](https://github.com/bryanrsmith/eslint-plugin-sort-class-members), and [eslint-plugin-lit](https://github.com/43081j/eslint-plugin-lit) plugins.
 
 See the [eslint rules](http://eslint.org/docs/rules/) for more details on rule configuration.  See the [eslint shareable configs](http://eslint.org/docs/developer-guide/shareable-configs.html) for more details on creating configs.
 
