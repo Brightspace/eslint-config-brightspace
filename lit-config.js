@@ -8,7 +8,9 @@ module.exports = {
 	"es6": true
   },
   "plugins": [
-    "lit", "html"
+    "lit", 
+	"html",
+	"sort-class-members"
   ],
   "globals": {
     "D2L": false,
