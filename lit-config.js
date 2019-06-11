@@ -1,3 +1,5 @@
+const { sortMemberRules } = require('./sort-member-config');
+
 module.exports = {
   "extends": "./index.js",
   "parser": "babel-eslint",
@@ -33,6 +35,7 @@ module.exports = {
     "lit/binding-positions": 2,
     "lit/no-property-change-update": 2,
     "lit/no-invalid-html": 2,
-    "lit/no-value-attribute": 2
+	"lit/no-value-attribute": 2,
+	...sortMemberRules
   }
 };
