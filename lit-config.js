@@ -8,7 +8,7 @@ module.exports = {
 	"es6": true
   },
   "plugins": [
-    "lit", 
+	"lit",
 	"html",
 	"sort-class-members"
   ],
