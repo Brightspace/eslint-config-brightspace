@@ -8,7 +8,6 @@ module.exports.sortMemberRules = {
 		  "[methods]",
 		  "[conventional-private-properties]",
 		  "[conventional-private-methods]",
-
 		],
 		"groups": {
 			"static-methods": [{ "type": "method", "sort": "alphabetical", "static": true }],
