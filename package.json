@@ -21,7 +21,7 @@
     "url": "https://github.com/Brightspace/eslint-config-brightspace/issues"
   },
   "homepage": "https://github.com/Brightspace/eslint-config-brightspace",
-  "devDependencies": {
-    "eslint": "^5.16.0"
+  "dependencies": {
+    "eslint": "^5.15.1"
   }
 }
