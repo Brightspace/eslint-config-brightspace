@@ -21,9 +21,6 @@
     "url": "https://github.com/Brightspace/eslint-config-brightspace/issues"
   },
   "homepage": "https://github.com/Brightspace/eslint-config-brightspace",
-  "peerDependencies": {
-    "eslint-plugin-sort-class-members": "^1.4.0"
-  },
   "devDependencies": {
     "eslint": "^5.16.0"
   }
