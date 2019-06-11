@@ -1,6 +1,8 @@
 module.exports.sortMemberRules = {
 	"sort-class-members/sort-class-members": [2, {
 		"order": [
+		  "[static-properties-getter]",
+		  "[static-styles-getter]",
 		  "[static-properties]",
 		  "[static-methods]",
 		  "[properties]",
@@ -12,6 +14,8 @@ module.exports.sortMemberRules = {
 		"groups": {
 			"static-methods": [{ "type": "method", "sort": "alphabetical", "static": true }],
 			"static-properties": [{ "type": "property", "sort": "alphabetical", "static": true }],
+			"static-properties-getter": [{ "name": "properties", "static": true }],
+			"static-styles-getter":  [{ "name": "styles", "static": true }],
 			"methods": [{ "type": "method", "sort": "alphabetical"}],
 			"properties": [{ "type": "property", "sort": "alphabetical"}],
 			"conventional-private-methods": [{ "type": "method", "sort": "alphabetical"}],
