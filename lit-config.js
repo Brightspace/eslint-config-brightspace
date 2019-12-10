@@ -20,6 +20,7 @@ module.exports = {
 		"arrow-spacing": 2,
 		"no-confusing-arrow": 2,
 		"no-duplicate-imports": 2,
+		"no-restricted-syntax": ["error", "CatchClause[param=null]"],
 		"no-useless-constructor": 2,
 		"no-var": 2,
 		"prefer-arrow-callback": 2,
