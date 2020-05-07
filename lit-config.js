@@ -1,10 +1,10 @@
 module.exports = {
-	"extends": "./web-config.js",
+	"extends": "./browser-config.js",
 	"env": {
 		"es6": true
 	},
 	"plugins": [
-		"lit",
+		"lit"
 	],
 	"rules": {
 		"arrow-spacing": 2,

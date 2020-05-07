@@ -1,5 +1,5 @@
 module.exports = {
-  "extends": "./web-config.js",
+  "extends": "./browser-config.js",
   "rules": {
     "strict": 0
   }
