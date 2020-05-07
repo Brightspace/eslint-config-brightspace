@@ -1,21 +1,11 @@
-const { sortMemberRules } = require('./sort-member-config');
-
 module.exports = {
-	"extends": "./index.js",
-	"parser": "babel-eslint",
+	"extends": "./web-config.js",
 	"env": {
-		"browser": true,
 		"es6": true
 	},
 	"plugins": [
 		"lit",
-		"html",
-		"sort-class-members"
 	],
-	"globals": {
-		"D2L": false,
-		"Promise": false
-	},
 	"rules": {
 		"arrow-spacing": 2,
 		"no-confusing-arrow": 2,
@@ -41,7 +31,6 @@ module.exports = {
 		"lit/no-template-bind": 2,
 		"lit/no-template-map": 0,
 		"lit/no-useless-template-literals": 2,
-		"lit/no-value-attribute": 2,
-		...sortMemberRules
+		"lit/no-value-attribute": 2
 	}
 };
