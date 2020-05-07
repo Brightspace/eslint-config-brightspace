@@ -1,15 +1,5 @@
 module.exports = {
-  "extends": "./index.js",
-  "env": {
-    "browser": true
-  },
-  "plugins": [
-    "html"
-  ],
-  "globals": {
-    "D2L": false,
-    "Polymer": false
-  },
+  "extends": "./browser-config.js",
   "rules": {
     "strict": 0
   }
