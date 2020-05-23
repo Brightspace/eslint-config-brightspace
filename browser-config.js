@@ -1,4 +1,4 @@
-const { sortMemberRules } = require('./sort-member-config');
+const { getSortMemberRules } = require('./sort-member-config');
 
 module.exports = {
 	"extends": "./index.js",
@@ -16,6 +16,6 @@ module.exports = {
 	},
 	"rules": {
 		"no-console": ["error", { "allow": ["warn", "error"] }],
-		...sortMemberRules
+		...getSortMemberRules()
 	}
 };

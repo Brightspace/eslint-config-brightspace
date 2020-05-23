@@ -1,4 +1,4 @@
-const { polymerSortMemberRules } = require('./polymer-sort-member-config');
+const { sortMemberRules } = require('./polymer-sort-member-config');
 
 module.exports = {
 	"extends": "./browser-config.js",
@@ -7,6 +7,6 @@ module.exports = {
 	],
 	"rules": {
 		"strict": 0,
-		...polymerSortMemberRules
+		...sortMemberRules
 	}
 };

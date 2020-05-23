@@ -1,4 +1,4 @@
-const groups = {
+const defaultGroups = {
 	"accessor-pairs": [{ "accessorPair": true, "sort": "alphabetical" }],
 	"methods": [{ "type": "method", "sort": "alphabetical" }],
 	"private-accessor-pairs": [{ "name": "/_.+/", "accessorPair": true, "sort": "alphabetical" }],
@@ -9,22 +9,24 @@ const groups = {
 	"static-properties": [{ "type": "property", "sort": "alphabetical", "static": true }]
 };
 
-module.exports.sortMemberGroups = groups;
+const defaultOrder = [
+	"[static-properties]",
+	"[static-methods]",
+	"[properties]",
+	"constructor",
+	"[accessor-pairs]",
+	"[methods]",
+	"[private-properties]",
+	"[private-accessor-pairs]",
+	"[private-methods]"
+];
 
-module.exports.sortMemberRules = {
-	"sort-class-members/sort-class-members": [2, {
-		"order": [
-			"[static-properties]",
-			"[static-methods]",
-			"[properties]",
-			"constructor",
-			"[accessor-pairs]",
-			"[methods]",
-			"[private-properties]",
-			"[private-accessor-pairs]",
-			"[private-methods]"
-		],
-		"groups": groups,
-		"accessorPairPositioning": "getThenSet"
-	}]
+module.exports.getSortMemberRules = (order, groups) => {
+	return {
+		"sort-class-members/sort-class-members": [2, {
+			"order": order ? order : defaultOrder,
+			"groups": {...defaultGroups, ...groups},
+			"accessorPairPositioning": "getThenSet"
+		}]
+	};
 };

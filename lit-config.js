@@ -1,40 +1,34 @@
-const { sortMemberGroups } = require('./sort-member-config');
+const { getSortMemberRules } = require('./sort-member-config');
 
-const litSortMemberRules = {
-	"sort-class-members/sort-class-members": [2, {
-		"order": [
-			"[lit-static-properties]",
-			"[static-properties]",
-			"[static-methods]",
-			"[properties]",
-			"constructor",
-			"[accessor-pairs]",
-			"[lit-methods]",
-			"[methods]",
-			"[private-accessor-pairs]",
-			"[private-properties]",
-			"[private-methods]"
-		],
-		"groups": { ...sortMemberGroups,
-			"lit-methods": [
-				{ "name": "attributeChangedCallback", "type": "method" },
-				{ "name": "connectedCallback", "type": "method" },
-				{ "name": "disconnectedCallback", "type": "method" },
-				{ "name": "firstUpdated", "type": "method" },
-				{ "name": "performUpdate", "type": "method" },
-				{ "name": "render", "type": "method" },
-				{ "name": "shouldUpdate", "type": "method" },
-				{ "name": "update", "type": "method" },
-				{ "name": "updated", "type": "method" }
-			],
-			"lit-static-properties": [
-				{ "name": "properties", "static": true },
-				{ "name": "styles", "static": true }
-			]
-		},
-		"accessorPairPositioning": "getThenSet"
-	}]
-};
+const sortMemberRules = getSortMemberRules([
+	"[lit-static-properties]",
+	"[static-properties]",
+	"[static-methods]",
+	"[properties]",
+	"constructor",
+	"[accessor-pairs]",
+	"[lit-methods]",
+	"[methods]",
+	"[private-accessor-pairs]",
+	"[private-properties]",
+	"[private-methods]"
+], {
+	"lit-methods": [
+		{ "name": "attributeChangedCallback", "type": "method" },
+		{ "name": "connectedCallback", "type": "method" },
+		{ "name": "disconnectedCallback", "type": "method" },
+		{ "name": "firstUpdated", "type": "method" },
+		{ "name": "performUpdate", "type": "method" },
+		{ "name": "render", "type": "method" },
+		{ "name": "shouldUpdate", "type": "method" },
+		{ "name": "update", "type": "method" },
+		{ "name": "updated", "type": "method" }
+	],
+	"lit-static-properties": [
+		{ "name": "properties", "static": true },
+		{ "name": "styles", "static": true }
+	]
+});
 
 module.exports = {
 	"extends": "./browser-config.js",
@@ -71,6 +65,6 @@ module.exports = {
 		"lit/no-template-map": 0,
 		"lit/no-useless-template-literals": 2,
 		"lit/no-value-attribute": 2,
-		...litSortMemberRules
+		...sortMemberRules
 	}
 };
