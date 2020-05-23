@@ -1,4 +1,4 @@
-const { sortMemberRules } = require('./sort-member-config');
+const { sortMemberGroups } = require('./sort-member-config');
 
 const litSortMemberRules = {
 	"sort-class-members/sort-class-members": [2, {
@@ -11,10 +11,11 @@ const litSortMemberRules = {
 			"[accessor-pairs]",
 			"[lit-methods]",
 			"[methods]",
-			"[conventional-private-properties]",
-			"[conventional-private-methods]"
+			"[private-accessor-pairs]",
+			"[private-properties]",
+			"[private-methods]"
 		],
-		"groups": { ...sortMemberRules.groups,
+		"groups": { ...sortMemberGroups,
 			"lit-methods": [
 				{ "name": "attributeChangedCallback", "type": "method" },
 				{ "name": "connectedCallback", "type": "method" },

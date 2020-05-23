@@ -25,8 +25,8 @@ module.exports = {
     "semi": 2, // nr
     "keyword-spacing": 2,
     "space-before-blocks": [2, "always"], // nr
-	"space-before-function-paren": [2, "never"], //nr
-	"space-in-parens": [2, "never"],
+    "space-before-function-paren": [2, "never"], //nr
+    "space-in-parens": [2, "never"],
     "space-infix-ops": 2, // nr
     "strict": [2, "global"], // nr
     "valid-typeof": 2
