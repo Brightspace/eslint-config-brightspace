@@ -1,10 +1,43 @@
+const { getSortMemberRules } = require('./sort-member-config');
+
+const sortMemberRules = getSortMemberRules([
+	"[lit-static-properties]",
+	"[static-properties]",
+	"[static-methods]",
+	"[properties]",
+	"constructor",
+	"[accessor-pairs]",
+	"[lit-methods]",
+	"[methods]",
+	"[private-accessor-pairs]",
+	"[private-properties]",
+	"[private-methods]"
+], {
+	"lit-methods": [
+		{ "name": "attributeChangedCallback", "type": "method" },
+		{ "name": "connectedCallback", "type": "method" },
+		{ "name": "disconnectedCallback", "type": "method" },
+		{ "name": "firstUpdated", "type": "method" },
+		{ "name": "performUpdate", "type": "method" },
+		{ "name": "render", "type": "method" },
+		{ "name": "shouldUpdate", "type": "method" },
+		{ "name": "update", "type": "method" },
+		{ "name": "updated", "type": "method" }
+	],
+	"lit-static-properties": [
+		{ "name": "properties", "static": true },
+		{ "name": "styles", "static": true }
+	]
+});
+
 module.exports = {
 	"extends": "./browser-config.js",
 	"env": {
 		"es6": true
 	},
 	"plugins": [
-		"lit"
+		"lit",
+		"sort-class-members"
 	],
 	"rules": {
 		"arrow-spacing": 2,
@@ -31,6 +64,7 @@ module.exports = {
 		"lit/no-template-bind": 2,
 		"lit/no-template-map": 0,
 		"lit/no-useless-template-literals": 2,
-		"lit/no-value-attribute": 2
+		"lit/no-value-attribute": 2,
+		...sortMemberRules
 	}
 };
