@@ -19,8 +19,8 @@ module.exports = {
     "no-trailing-spaces": 2, // nr
     "no-undef": 2,
     "no-unreachable": 2,
-	"no-unused-vars": [2, {"vars": "all", "args": "after-used"}],
-	"object-curly-spacing": [2, "always"],
+    "no-unused-vars": [2, {"vars": "all", "args": "after-used"}],
+    "object-curly-spacing": [2, "always"],
     "prefer-const": 2, // nr
     "quotes": [2, "single", "avoid-escape"], // nr
     "semi": 2, // nr
