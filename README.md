@@ -63,7 +63,7 @@ This repository is configured with [EditorConfig](http://editorconfig.org) rules
 
 [npm-url]: https://npmjs.org/package/eslint-config-brightspace
 [npm-image]: https://img.shields.io/npm/v/eslint-config-brightspace.svg
-[ci-image]: https://travis-ci.org/Brightspace/eslint-config-brightspace.svg?branch=master
-[ci-url]: https://travis-ci.org/Brightspace/eslint-config-brightspace
+[ci-image]: https://github.com/Brightspace/eslint-config-brightspace/workflows/Release/badge.svg
+[ci-url]: https://github.com/Brightspace/eslint-config-brightspace/actions?query=workflow%3ARelease
 [dependencies-url]: https://david-dm.org/brightspace/eslint-config-brightspace
 [dependencies-image]: https://img.shields.io/david/Brightspace/eslint-config-brightspace.svg
