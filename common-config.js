@@ -7,6 +7,7 @@ module.exports = {
     "eol-last": 2, // nr
     "eqeqeq": 2, // nr
     "indent": [2, "tab", { "SwitchCase": 1 }], // nr
+    "linebreak-style": ["error", "unix"], // nr
     "new-parens": 2, // nr
     "no-debugger": 2,
     "no-dupe-args": 2,
