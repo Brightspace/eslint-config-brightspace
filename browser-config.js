@@ -2,7 +2,10 @@ const { getSortMemberRules } = require('./sort-member-config');
 
 module.exports = {
 	"extends": "./index.js",
-	"parser": "babel-eslint",
+	"parser": "@babel/eslint-parser",
+	"parserOptions": {
+		"requireConfigFile": false
+  },
 	"env": {
 		"browser": true
 	},
