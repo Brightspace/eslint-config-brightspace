@@ -11,6 +11,7 @@ module.exports.sortMemberRules = getSortMemberRules([
 	"[accessor-pairs]",
 	"[methods]",
 	"[private-accessor-pairs]",
+	"[private-accessors]",
 	"[private-properties]",
 	"[private-methods]"
 ], {
