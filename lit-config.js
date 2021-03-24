@@ -10,6 +10,7 @@ const sortMemberRules = getSortMemberRules([
 	"[lit-methods]",
 	"[methods]",
 	"[private-accessor-pairs]",
+	"[private-accessors]",
 	"[private-properties]",
 	"[private-methods]"
 ], {
