@@ -1,5 +1,6 @@
 const defaultGroups = {
 	"accessor-pairs": [{ "accessorPair": true, "sort": "alphabetical" }],
+	"accessors": [{ "kind": "get", "accessorPair": false, "sort": "alphabetical" }, { "kind": "set", "accessorPair": false, "sort": "alphabetical" }],
 	"methods": [{ "type": "method", "sort": "alphabetical" }],
 	"private-accessor-pairs": [{ "name": "/_.+/", "accessorPair": true, "sort": "alphabetical" }],
 	"private-accessors": [{ "name": "/_.+/", "kind": "get", "accessorPair": false, "sort": "alphabetical" }, { "name": "/_.+/", "kind": "set", "accessorPair": false, "sort": "alphabetical" }],
@@ -16,6 +17,7 @@ const defaultOrder = [
 	"[properties]",
 	"constructor",
 	"[accessor-pairs]",
+	"[accessors]",
 	"[methods]",
 	"[private-properties]",
 	"[private-accessor-pairs]",

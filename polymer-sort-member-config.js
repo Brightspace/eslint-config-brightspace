@@ -9,6 +9,7 @@ module.exports.sortMemberRules = getSortMemberRules([
 	"[properties]",
 	"constructor",
 	"[accessor-pairs]",
+	"[accessors]",
 	"[methods]",
 	"[private-accessor-pairs]",
 	"[private-accessors]",

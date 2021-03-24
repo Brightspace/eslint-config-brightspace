@@ -7,6 +7,7 @@ const sortMemberRules = getSortMemberRules([
 	"[properties]",
 	"constructor",
 	"[accessor-pairs]",
+	"[accessors]",
 	"[lit-methods]",
 	"[methods]",
 	"[private-accessor-pairs]",
