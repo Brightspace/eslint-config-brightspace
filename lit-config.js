@@ -38,6 +38,7 @@ module.exports = {
 		"es6": true
 	},
 	"plugins": [
+		"import",
 		"lit",
 		"sort-class-members"
 	],
@@ -54,6 +55,7 @@ module.exports = {
 		"prefer-template": 2,
 		"sort-imports": [2, { "ignoreCase": true }],
 		"strict": [2, "never"],
+		"import/extensions": ["error", "always"],
 		"lit/attribute-value-entities": 2,
 		"lit/binding-positions": 2,
 		"lit/no-duplicate-template-bindings": 2,
