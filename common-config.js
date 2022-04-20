@@ -5,7 +5,7 @@ module.exports = {
   "rules": {
     "comma-spacing": 2, // nr
     "eol-last": 2, // nr
-    "eqeqeq": 2, // nr
+    "eqeqeq": [2, "always", { "null": "ignore" }], // nr
     "indent": [2, "tab", { "SwitchCase": 1 }], // nr
     "linebreak-style": ["error", "unix"], // nr
     "new-parens": 2, // nr
