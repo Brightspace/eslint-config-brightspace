@@ -34,28 +34,12 @@ const sortMemberRules = getSortMemberRules([
 
 module.exports = {
 	"extends": "./browser-config.js",
-	"env": {
-		"es6": true
-	},
 	"plugins": [
 		"import",
 		"lit",
 		"sort-class-members"
 	],
 	"rules": {
-		"arrow-spacing": 2,
-		"no-confusing-arrow": 2,
-		"no-duplicate-imports": 2,
-		"no-restricted-syntax": ["error", "CatchClause[param=null]"],
-		"no-useless-constructor": 2,
-		"no-var": 2,
-		"prefer-arrow-callback": 2,
-		"prefer-const": 2,
-		"prefer-spread": 2,
-		"prefer-template": 2,
-		"sort-imports": [2, { "ignoreCase": true }],
-		"strict": [2, "never"],
-		"import/extensions": ["error", "ignorePackages"],
 		"lit/attribute-value-entities": 2,
 		"lit/binding-positions": 2,
 		"lit/no-duplicate-template-bindings": 2,

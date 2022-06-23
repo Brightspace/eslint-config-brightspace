@@ -5,19 +5,33 @@ module.exports = {
 	"parser": "@babel/eslint-parser",
 	"parserOptions": {
 		"requireConfigFile": false
-  },
+	},
 	"env": {
-		"browser": true
+		"browser": true,
+		"es2021": true
 	},
 	"plugins": [
 		"html",
+		"import",
 		"sort-class-members"
 	],
 	"globals": {
-		"D2L": false,
-		"Promise": false
+		"D2L": false
 	},
 	"rules": {
+		"arrow-spacing": 2,
+		"no-confusing-arrow": 2,
+		"no-duplicate-imports": 2,
+		"no-restricted-syntax": ["error", "CatchClause[param=null]"],
+		"no-useless-constructor": 2,
+		"no-var": 2,
+		"prefer-arrow-callback": 2,
+		"prefer-const": 2,
+		"prefer-spread": 2,
+		"prefer-template": 2,
+		"sort-imports": [2, { "ignoreCase": true }],
+		"strict": [2, "never"],
+		"import/extensions": ["error", "ignorePackages"],
 		"no-console": ["error", { "allow": ["warn", "error"] }],
 		...getSortMemberRules()
 	}
