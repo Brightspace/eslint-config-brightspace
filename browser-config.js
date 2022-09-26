@@ -32,6 +32,7 @@ module.exports = {
 		"sort-imports": [2, { "ignoreCase": true }],
 		"strict": [2, "never"],
 		"import/extensions": ["error", "ignorePackages"],
+		"import/no-absolute-path": 2,
 		"no-console": ["error", { "allow": ["warn", "error"] }],
 		...getSortMemberRules()
 	}
