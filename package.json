@@ -15,6 +15,22 @@
     "eslint",
     "eslintconfig"
   ],
+  "files": [
+    "browser-config.js",
+    "common-config.js",
+    "index.js",
+    "lit-config.js",
+    "node-config.js",
+    "open-wc-testing-config.js",
+    "polymer-3-config.js",
+    "polymer-config.js",
+    "polymer-sort-member-config.js",
+    "react-config.js",
+    "sort-member-config.js",
+    "wct-config.js",
+    "wct-lit-config.js",
+    "wct-polymer-3-config.js"
+  ],
   "author": "D2L Corporation",
   "license": "Apache-2.0",
   "bugs": {
