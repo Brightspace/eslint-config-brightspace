@@ -1,7 +1,7 @@
 module.exports = {
   "extends": "./index.js",
   "env": {
-    "es2017": true,
+    "es2022": true,
     "node": true
   }
 };
