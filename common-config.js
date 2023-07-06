@@ -18,6 +18,7 @@ module.exports = {
     "no-fallthrough": 2,
     "no-invalid-this": 2, // nr
     "no-multiple-empty-lines": [2, {"max": 1}], // nr
+	"no-multi-spaces": 2, // nr
 	"no-new-wrappers": 2, // nr
     "no-trailing-spaces": 2, // nr
     "no-undef": 2,
