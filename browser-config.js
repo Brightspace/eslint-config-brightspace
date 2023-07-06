@@ -34,7 +34,7 @@ module.exports = {
 		"import/extensions": ["error", "ignorePackages"],
 		"import/no-absolute-path": 2,
 		"no-console": ["error", { "allow": ["warn", "error"] }],
-		"no-multi-spaces": "error",
+		"no-multi-spaces": 2,
 		...getSortMemberRules()
 	}
 };
