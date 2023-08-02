@@ -25,7 +25,6 @@ module.exports = {
 		"no-restricted-syntax": ["error", "CatchClause[param=null]"],
 		"no-useless-constructor": 2,
 		"prefer-arrow-callback": 2,
-		"prefer-const": 2,
 		"prefer-spread": 2,
 		"prefer-template": 2,
 		"sort-imports": [2, { "ignoreCase": true }],
