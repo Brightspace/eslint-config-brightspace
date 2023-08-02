@@ -26,6 +26,7 @@ module.exports = {
     "no-unreachable": 2,
     "no-unused-vars": [2, {"vars": "all", "args": "after-used"}],
     "no-use-before-define": [2, "nofunc"], // nr
+	"no-var": 2, // nr
     "object-curly-spacing": [2, "always"],
     "prefer-const": 2, // nr
     "quotes": [2, "single", "avoid-escape"], // nr
