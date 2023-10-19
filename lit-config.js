@@ -16,15 +16,19 @@ const sortMemberRules = getSortMemberRules([
 	"[private-methods]"
 ], {
 	"lit-methods": [
+		{ "name": "adoptedCallback", "type": "method" },
 		{ "name": "attributeChangedCallback", "type": "method" },
 		{ "name": "connectedCallback", "type": "method" },
 		{ "name": "disconnectedCallback", "type": "method" },
 		{ "name": "firstUpdated", "type": "method" },
+		{ "name": "getUpdateComplete", "type": "method" },
 		{ "name": "performUpdate", "type": "method" },
 		{ "name": "render", "type": "method" },
+		{ "name": "scheduleUpdate", "type": "method" },
 		{ "name": "shouldUpdate", "type": "method" },
 		{ "name": "update", "type": "method" },
-		{ "name": "updated", "type": "method" }
+		{ "name": "updated", "type": "method" },
+		{ "name": "willUpdate", "type": "method" }
 	],
 	"lit-static-properties": [
 		{ "name": "properties", "static": true },
