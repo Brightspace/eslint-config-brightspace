@@ -43,6 +43,12 @@ module.exports = {
 		"lit",
 		"sort-class-members"
 	],
+	"overrides": [{
+		"files": "./**/lang/*.js",	
+		"rules": {
+			"quotes": 0
+		}
+	}]
 	"rules": {
 		"lit/attribute-value-entities": 2,
 		"lit/binding-positions": 2,
