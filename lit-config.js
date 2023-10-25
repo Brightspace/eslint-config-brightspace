@@ -44,7 +44,7 @@ module.exports = {
 		"sort-class-members"
 	],
 	"overrides": [{
-		"files": "./lang/*.js",	
+		"files": "./**/lang/*.js",	
 		"rules": {
 			"quotes": 0
 		}
