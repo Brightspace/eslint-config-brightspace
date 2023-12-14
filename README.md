@@ -26,7 +26,7 @@ Set the `extends` property in the `.eslintrc.json` file, replacing `<environment
 |--|--|
 | `browser-config` | use with code that runs in a browser |
 | `lit-config` | use with [Lit](https://lit.dev/) projects |
-| `open-wc-testing-config` | use with [@open-wc/testing](https://open-wc.org/testing) + Lit test code |
+| `testing-config` | use with [@brightspace-ui/testing](https://github.com/BrightspaceUI/testing) test code |
 | `node-config` | use with [Node.js](https://nodejs.org) projects |
 | `react-config` | use with [React](https://react.dev/) projects |
 
