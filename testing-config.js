@@ -1,8 +1,7 @@
 module.exports = {
   "extends": "./lit-config.js",
   "env": {
-    "mocha": true,
-    "node": true
+    "mocha": true
   },
   "rules": {
     "no-invalid-this": 0
