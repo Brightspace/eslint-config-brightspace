@@ -3,5 +3,8 @@ module.exports = {
   "env": {
     "es2024": true,
     "node": true
-  }
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
 };
