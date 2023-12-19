@@ -46,7 +46,9 @@ module.exports = {
 	"overrides": [{
 		"files": "./**/lang/*.js",	
 		"rules": {
-			"quotes": 0
+			"quotes": "off",
+			"key-spacing": "error",
+			"quote-props": ["error", "consistent"],
 		}
 	}],
 	"rules": {
