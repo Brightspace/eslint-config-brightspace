@@ -52,17 +52,22 @@ module.exports = {
 	"rules": {
 		"lit/attribute-value-entities": 2,
 		"lit/binding-positions": 2,
+		"lit/lifecycle-super": 2,
 		"lit/no-duplicate-template-bindings": 2,
 		"lit/no-invalid-escape-sequences": 2,
 		"lit/no-invalid-html": 2,
+		"lit/no-legacy-imports": 2,
 		"lit/no-legacy-template-syntax": 2,
 		"lit/no-private-properties": [2, { "private": "^(__|_)" }],
 		"lit/no-property-change-update": 2,
+		"lit/no-native-attributes": 1,
 		"lit/no-template-arrow": 2,
 		"lit/no-template-bind": 2,
 		"lit/no-template-map": 0,
+		"lit/no-this-assign-in-render": 2,
 		"lit/no-useless-template-literals": 2,
 		"lit/no-value-attribute": 2,
+		"lit/prefer-nothing": 2,
 		...sortMemberRules
 	}
 };

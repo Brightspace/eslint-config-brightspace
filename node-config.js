@@ -1,7 +1,10 @@
 module.exports = {
   "extends": "./index.js",
   "env": {
-    "es2022": true,
+    "es2024": true,
     "node": true
-  }
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
 };
