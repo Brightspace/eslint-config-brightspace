@@ -5,10 +5,10 @@ const defaultGroups = {
 	"private-accessor-pairs": [{ "name": "/_.+/", "accessorPair": true, "sort": "alphabetical" }],
 	"private-accessors": [{ "name": "/_.+/", "kind": "get", "accessorPair": false, "sort": "alphabetical" }, { "name": "/_.+/", "kind": "set", "accessorPair": false, "sort": "alphabetical" }],
 	"private-methods": [{ "name": "/_.+/", "type": "method", "sort": "alphabetical" }],
-	"private-properties": [{ "name": "/_.+/", "type": "property", "sort": "alphabetical" }],
-	"properties": [{ "type": "property", "sort": "alphabetical" }],
+	"private-properties": [{ "name": "/_.+/", "type": "property", "sort": "none" }],
+	"properties": [{ "type": "property", "sort": "none" }],
 	"static-methods": [{ "type": "method", "sort": "alphabetical", "static": true }],
-	"static-properties": [{ "type": "property", "sort": "alphabetical", "static": true }]
+	"static-properties": [{ "type": "property", "sort": "none", "static": true }]
 };
 
 const defaultOrder = [
