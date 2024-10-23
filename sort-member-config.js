@@ -3,7 +3,7 @@ const defaultGroups = {
 	"accessors": [{ "kind": "get", "accessorPair": false, "sort": "alphabetical" }, { "kind": "set", "accessorPair": false, "sort": "alphabetical" }],
 	"methods": [{ "type": "method", "sort": "alphabetical" }],
 	"private-accessor-pairs": [{ "name": "/(_|#).+/", "accessorPair": true, "sort": "alphabetical" }],
-	"private-accessors": [{ "name": "/(_|#).+/", "kind": "get", "accessorPair": false, "sort": "alphabetical" }, { "name": "/_.+/", "kind": "set", "accessorPair": false, "sort": "alphabetical" }],
+	"private-accessors": [{ "name": "/(_|#).+/", "kind": "get", "accessorPair": false, "sort": "alphabetical" }, { "name": "/(_|#).+/", "kind": "set", "accessorPair": false, "sort": "alphabetical" }],
 	"private-methods": [{ "name": "/(_|#).+/", "type": "method", "sort": "alphabetical" }],
 	"private-properties": [{ "name": "/(_|#).+/", "type": "property", "sort": "none" }],
 	"properties": [{ "type": "property", "sort": "none" }],
