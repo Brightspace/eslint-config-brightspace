@@ -20,7 +20,6 @@ module.exports = {
 		"no-multiple-empty-lines": [2, {"max": 1}], // nr
 		"no-multi-spaces": 2, // nr
 		"no-new-wrappers": 2, // nr
-		"no-restricted-syntax": [0, "CatchClause[param=null]"],
 		"no-trailing-spaces": 2, // nr
 		"no-undef": 2,
 		"no-unneeded-ternary": 2, // nr
