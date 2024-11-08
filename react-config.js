@@ -1,18 +1,26 @@
-module.exports = {
-  "extends": "./index.js",
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "sourceType": "module"
-  },
-  "env": {
-    "browser": true,
-    "es6": true,
-    "jest": true,
-    "node": true
-  },
-  "plugins": [
-    "react"
-  ]
-};
+import globals from 'globals';
+
+import baseConfig from './base-config.js';
+import react from 'eslint-plugin-react';
+
+export default [
+	...baseConfig,
+	{
+		'languageOptions': {
+			'parserOptions': {
+				'ecmaFeatures': {
+					'jsx': true
+				},
+				'sourceType': 'module'
+			},
+			'globals': {
+				...globals.browser,
+				...globals.es2015,
+				...globals.jest,
+				...globals.node,
+			},
+			'ecmaVersion': 6,
+		},
+		'plugins': { react }
+	}
+];

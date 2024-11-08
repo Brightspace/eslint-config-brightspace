@@ -1,13 +1,20 @@
-module.exports = {
-  "extends": "./index.js",
-  "env": {
-    "es2024": true,
-    "node": true
-  },
-  "parserOptions": {
-    "sourceType": "module"
-  },
-  "rules": {
-	"no-console":0
-  }
-};
+import globals from 'globals';
+
+import baseConfig from './base-config.js';
+export default [
+	...baseConfig,
+	{
+		'languageOptions': {
+			'parserOptions': {
+				'sourceType': 'module'
+			},
+			'globals': {
+				...globals.node,
+				...globals.es2024
+			},
+		},
+		'rules': {
+			'no-console':0
+		}
+	}
+];

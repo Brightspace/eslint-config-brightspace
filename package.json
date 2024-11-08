@@ -3,8 +3,10 @@
   "version": "1.3.1",
   "description": "Common Brightspace eslint configs.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "exit 0"
+    "test": "npm run lint:eslint",
+    "lint:eslint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -16,14 +18,8 @@
     "eslintconfig"
   ],
   "files": [
-    "eslint9/",
-    "browser-config.js",
     "index.js",
-    "lit-config.js",
-    "node-config.js",
-    "react-config.js",
-    "sort-member-config.js",
-    "testing-config.js"
+    "utils.js"
   ],
   "author": "D2L Corporation",
   "license": "Apache-2.0",
