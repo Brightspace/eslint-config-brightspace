@@ -1,14 +1,7 @@
-import baseConfig from './base-config.js';
-import browserConfig from './browser-config.js';
-import litConfig from './lit-config.js';
-import nodeConfig from './node-config.js';
-import reactConfig from './react-config.js';
-import testingConfig from './testing-config.js';
-
-export const base = baseConfig;
-export const browser = browserConfig;
-export const lit = litConfig;
-export const node = nodeConfig;
-export const react = reactConfig;
-export const testing = testingConfig;
+export { default as baseConfig } from './configs/base.js';
+export { default as browserConfig } from './configs/browser.js';
+export { default as litConfig } from './configs/lit.js';
+export { default as nodeConfig } from './configs/node.js';
+export { default as reactConfig } from './configs/react.js';
+export { default as testingConfig } from './configs/testing.js';
 

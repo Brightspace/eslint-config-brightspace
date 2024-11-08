@@ -1,10 +1,10 @@
 import parser from '@babel/eslint-parser';
 import globals from 'globals';
-import baseConfig from './base-config.js';
+import baseConfig from './base.js';
 import html from 'eslint-plugin-html';
 import importPlugin from 'eslint-plugin-import';
 import sortClassMembersPlugin from 'eslint-plugin-sort-class-members';
-import { getSortMemberRules } from './utils.js';
+import { getSortMemberRules } from '../utils.js';
 
 export default [
 	...baseConfig,

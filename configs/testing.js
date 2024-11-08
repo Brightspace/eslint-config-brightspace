@@ -1,6 +1,5 @@
 import globals from 'globals';
-
-import litConfig from './lit-config.js';
+import litConfig from './lit.js';
 
 export default [
 	...litConfig,

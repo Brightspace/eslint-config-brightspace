@@ -1,6 +1,6 @@
-import browserConfig from './browser-config.js';
+import browserConfig from './browser.js';
 import lit from 'eslint-plugin-lit';
-import { getSortMemberRules } from './utils.js';
+import { getSortMemberRules } from '../utils.js';
 
 const sortMemberRules = getSortMemberRules([
 	'[lit-static-properties]',

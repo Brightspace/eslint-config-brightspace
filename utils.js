@@ -36,7 +36,7 @@ export const getSortMemberRules = (order, groups) => {
 };
 
 export function overrideFiles(config, files) {
-	return config.map(c => ({ files, ...c }))
+	return config.map(c => ({ files, ...c }));
 }
 
 export function addExtensions(config, extensions) {

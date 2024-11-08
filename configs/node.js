@@ -1,6 +1,6 @@
 import globals from 'globals';
+import baseConfig from './base.js';
 
-import baseConfig from './base-config.js';
 export default [
 	...baseConfig,
 	{
