@@ -12,30 +12,58 @@ npm install eslint-config-brightspace
 
 ## Usage
 
-Set the `extends` property in the `.eslintrc.json` file, replacing `<environment>` with the desired environment-specific config.
-
-```json
-{
-  "extends": "brightspace/<environment>"
-}
+Shared configurations can be directly exported or included as part of a custom configuration in the `eslint.config..js` file.
+```js
+export { nodeConfig as default } from './index.js';
 ```
+
+```js
+import { nodeConfig } from 'eslint-config-brightspace';
+
+export default [
+	...nodeConfig,
+	// Custom configuration
+];
+```
+
+### Utils
+
+Since the `--ext` flag is deprecated, include extensions by using the `addExtenstion` function from `utils.js`.
+```js
+import { nodeConfig } from 'eslint-config-brightspace';
+
+export default addExtensions(nodeConfig, ['.js','.html']);
+```
+
+To include different configurations for specific directories, use the `setDirectoryConfigs` function from `utils.js`. This replaces the [configuration hierarchy](https://eslint.org/docs/v8.x/use/configure/configuration-files#cascading-and-hierarchy) from `eslint8`. To use it, include the global configuration and specify the directory configurations, these will apply to all files inside the directory and recursively to any of its subdirectories.
+```js
+import { setDirectoryConfigs } from 'eslint-config-brightspace/utils.js';
+import { litConfig, nodeConfig, testingConfig } from 'eslint-config-brightspace';
+
+export default setDirectoryConfigs(
+	litConfig,
+	{
+		'test': testingConfig,
+		'test/cli': nodeConfig
+	}
+);
+```
+Note that each set configuration will force all prior configurations to ignore it. For example, for the above configuration, `litConfig` will ignore any files in the `test` directory; and `testingConfig` will ignore any files in the `test/cli` directory.
 
 ### Environment Specific Configs
 
 | Environment | Description |
 |--|--|
-| `browser-config` | use with code that runs in a browser |
-| `lit-config` | use with [Lit](https://lit.dev/) projects |
-| `testing-config` | use with [@brightspace-ui/testing](https://github.com/BrightspaceUI/testing) test code |
-| `node-config` | use with [Node.js](https://nodejs.org) projects |
-| `react-config` | use with [React](https://react.dev/) projects |
+| `browserConfig` | use with code that runs in a browser |
+| `litConfig` | use with [Lit](https://lit.dev/) projects |
+| `testingConfig` | use with [@brightspace-ui/testing](https://github.com/BrightspaceUI/testing) test code |
+| `nodeConfig` | use with [Node.js](https://nodejs.org) projects |
+| `reactConfig` | use with [React](https://react.dev/) projects |
 
 Example:
 
-```json
-{
-  "extends": "brightspace/lit-config"
-}
+```js
+export { nodeConfig as default } from './index.js';
 ```
 
 See the [eslint rules](https://eslint.org/docs/latest/rules/) for more details on rule configuration.  See the [eslint shareable configs](https://eslint.org/docs/latest/extend/shareable-configs.html) for more details on creating configs.

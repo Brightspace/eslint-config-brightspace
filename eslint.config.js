@@ -1,3 +1,1 @@
-import { nodeConfig } from './index.js';
-
-export default nodeConfig;
+export { nodeConfig as default } from './index.js';

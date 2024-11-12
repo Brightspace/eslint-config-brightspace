@@ -1,3 +1,4 @@
+//@ts-check
 const defaultGroups = {
 	'accessor-pairs': [{ 'accessorPair': true, 'sort': 'alphabetical' }],
 	'accessors': [{ 'kind': 'get', 'accessorPair': false, 'sort': 'alphabetical' }, { 'kind': 'set', 'accessorPair': false, 'sort': 'alphabetical' }],
@@ -35,11 +36,44 @@ export const getSortMemberRules = (order, groups) => {
 	};
 };
 
-export function overrideFiles(config, files) {
-	return config.map(c => ({ files, ...c }));
+export function setDirectoryConfigs(globalConfig, directoryConfigs) {
+	const configs = globalConfig.map(c => ({ ...c }));
+	for (const dir in directoryConfigs) {
+		const pattern = `${dir}/**/*`;
+		for (const baseConfig of configs) {
+			if (!(baseConfig.ignores)) baseConfig.ignores = [];
+			baseConfig.ignores.push(pattern);
+		}
+
+		for (const dirConfig of directoryConfigs[dir]) {
+			const files = dirConfig.files ? dirConfig.files.map(f => {
+				if (f.startsWith('./')) return `${dir}${f.slice(1)}`;
+				if (f.startsWith('*')) return `${dir}${f}`;
+				return `${dir}/${f}`;
+			}) : [pattern];
+			configs.push({
+				...dirConfig,
+				files
+			});
+		}
+	}
+
+	return configs;
 }
 
 export function addExtensions(config, extensions) {
-	const files = extensions.map(ext => `**/*${ext}`);
-	return overrideFiles(config, files);
+	return config.map(c => {
+		const newFiles = [];
+		for (const f of (c.files ?? ['**/*'])) {
+			if (f.includes('.')) newFiles.push(f);
+			else {
+				for (const ext of extensions)
+					newFiles.push(`${f}${f.endsWith('*') ? '' : '*'}${ext}`);
+			}
+		}
+		return {
+			...c,
+			files: newFiles
+		};
+	});
 }
