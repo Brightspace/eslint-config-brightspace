@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-brightspace",
-  "version": "1.3.2",
+  "version": "2.0.0",
   "description": "Common Brightspace eslint configs.",
   "exports": {
     ".": "./index.js"
