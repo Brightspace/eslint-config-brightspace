@@ -12,12 +12,12 @@ npm install eslint-config-brightspace
 
 ## Usage
 
-Shared configuration, they need to exported from the `eslint.config.js` file on the root directory.
+To use a shared configuration without any customizations, export it from a `eslint.config.js` file at the project root:
 ```js
-export { nodeConfig as default } from 'eslint-config-brightspace/index.js';
+export { nodeConfig as default } from 'eslint-config-brightspace';
 ```
 
-They can also be included as part of a custom configuration.
+Shared configurations can also be included in a custom configuration:
 ```js
 import { nodeConfig } from 'eslint-config-brightspace';
 
@@ -37,7 +37,9 @@ export default addExtensions(nodeConfig, ['.js','.html']);
 
 ### Different Configurations for Different Directories
 
-To include different configurations for specific directories, use the `setDirectoryConfigs` helper function. This replaces the [configuration hierarchy](https://eslint.org/docs/v8.x/use/configure/configuration-files#cascading-and-hierarchy) from `eslint8`. To use it, include the global configuration and specify the directory configurations, these will apply to all files inside the directory and recursively to any of its subdirectories.
+To include different configurations for specific directories, use the `setDirectoryConfigs` helper function. This replaces the [configuration hierarchy](https://eslint.org/docs/v8.x/use/configure/configuration-files#cascading-and-hierarchy) from `eslint8`.
+
+Include the global configuration and specify the directory configurations. These will apply to all files inside the directory and recursively to any of its subdirectories.
 ```js
 import { litConfig, nodeConfig, setDirectoryConfigs, testingConfig } from 'eslint-config-brightspace';
 
@@ -64,7 +66,7 @@ Note that each set configuration will force all prior configurations to ignore i
 Example:
 
 ```js
-export { nodeConfig as default } from 'eslint-config-brightspace/index.js';
+export { nodeConfig as default } from 'eslint-config-brightspace';
 ```
 
 See the [eslint rules](https://eslint.org/docs/latest/rules/) for more details on rule configuration.  See the [eslint shareable configs](https://eslint.org/docs/latest/extend/shareable-configs.html) for more details on creating configs.
