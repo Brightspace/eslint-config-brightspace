@@ -4,4 +4,5 @@ export { default as litConfig } from './configs/lit.js';
 export { default as nodeConfig } from './configs/node.js';
 export { default as reactConfig } from './configs/react.js';
 export { default as testingConfig } from './configs/testing.js';
+export { addExtensions, setDirectoryConfigs } from './utils.js';
 
