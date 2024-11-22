@@ -65,12 +65,12 @@ export default [
 		}
 	},
 	{
-		'files': ['./**/lang/*.js'],
+		'files': ['**/lang/*.js'],
 		'rules': {
 			'quotes': 0
 		}
 	}, {
-		'files': ['./**/demo/*.html'],
+		'files': ['**/demo/*.html'],
 		'rules': {
 			'no-console': 0
 		}
