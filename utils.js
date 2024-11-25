@@ -46,11 +46,7 @@ export function setDirectoryConfigs(globalConfig, directoryConfigs) {
 		}
 
 		for (const dirConfig of directoryConfigs[dir]) {
-			const files = dirConfig.files ? dirConfig.files.map(f => {
-				if (f.startsWith('./')) return `${dir}${f.slice(1)}`;
-				if (f.startsWith('*')) return `${dir}${f}`;
-				return `${dir}/${f}`;
-			}) : [pattern];
+			const files = dirConfig.files ? dirConfig.files.map(f => `${dir}/${f}`) : [pattern];
 			configs.push({
 				...dirConfig,
 				files
