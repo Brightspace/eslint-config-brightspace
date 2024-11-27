@@ -41,6 +41,9 @@ const sortMemberRules = getSortMemberRules([
 export default [
 	...browserConfig,
 	{
+		ignores: ['.vdiff']
+	},
+	{
 		plugins: { lit },
 		rules: {
 			'lit/attribute-value-entities': 2,
@@ -70,7 +73,7 @@ export default [
 			'quotes': 0
 		}
 	}, {
-		'files': ['**/demo/*.html'],
+		'files': ['**/demo/**/*.html'],
 		'rules': {
 			'no-console': 0
 		}
