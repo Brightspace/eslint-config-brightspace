@@ -27,7 +27,8 @@ export default [js.configs.recommended, {
 		'no-unused-vars': [2, {
 			'vars': 'all',
 			'args': 'after-used',
-			'ignoreRestSiblings': true
+			'ignoreRestSiblings': true,
+			'destructuredArrayIgnorePattern': 'gc|^_'
 		}],
 		'no-use-before-define': [2, 'nofunc'], // nr
 		'no-var': 2, // nr
