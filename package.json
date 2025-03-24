@@ -35,7 +35,7 @@
     "eslint": ">= 7",
     "eslint-plugin-html": "^8",
     "eslint-plugin-import": "^2",
-    "eslint-plugin-lit": "^1",
+    "eslint-plugin-lit": "^2",
     "eslint-plugin-sort-class-members": "^1",
     "eslint-plugin-react": "^7",
     "globals": "^16"
