@@ -1,12 +1,15 @@
 // nr = not as per eslint:recommended
 import js from '@eslint/js';
+import stylistic from '@stylistic/eslint-plugin';
 
 export default [js.configs.recommended, {
+	'plugins': {
+		'@stylistic': stylistic
+	},
 	'rules': {
 		'comma-spacing': 2, // nr
 		'eol-last': 2, // nr
 		'eqeqeq': [2, 'always', { 'null': 'ignore' }], // nr
-		'indent': [2, 'tab', { 'SwitchCase': 1 }], // nr
 		'keyword-spacing': 2,
 		'linebreak-style': ['error', 'unix'], // nr
 		'new-parens': 2, // nr
@@ -41,6 +44,7 @@ export default [js.configs.recommended, {
 		'space-in-parens': [2, 'never'],
 		'space-infix-ops': 2, // nr
 		'strict': [2, 'global'], // nr
-		'valid-typeof': 2
+		'valid-typeof': 2,
+		'@stylistic/indent': [2, 'tab', { 'SwitchCase': 1 }]
 	}
 }];
