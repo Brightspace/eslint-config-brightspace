@@ -70,7 +70,8 @@ export default [
 	{
 		'files': ['**/lang/*.js'],
 		'rules': {
-			'quotes': 0
+			'quotes': 0,
+			'no-irregular-whitespace': 0
 		}
 	}, {
 		'files': ['**/demo/**/*.html'],
