@@ -37,7 +37,6 @@ export default [js.configs.recommended, {
 		'no-var': 2, // nr
 		'object-curly-spacing': [2, 'always'],
 		'prefer-const': 2, // nr
-		'quotes': [2, 'single', 'avoid-escape'], // nr
 		'semi': 2, // nr
 		'space-before-blocks': [2, 'always'], // nr
 		'space-before-function-paren': [2, 'never'], //nr
@@ -45,6 +44,7 @@ export default [js.configs.recommended, {
 		'space-infix-ops': 2, // nr
 		'strict': [2, 'global'], // nr
 		'valid-typeof': 2,
-		'@stylistic/indent': [2, 'tab', { 'SwitchCase': 1 }]
+		'@stylistic/indent': [2, 'tab', { 'SwitchCase': 1 }], // nr
+		'@stylistic/quotes': [2, 'single', { 'avoidEscape': true }] // nr
 	}
 }];
