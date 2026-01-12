@@ -39,6 +39,6 @@
     "eslint-plugin-lit": "^2",
     "eslint-plugin-sort-class-members": "^1",
     "eslint-plugin-react": "^7",
-    "globals": "^16"
+    "globals": "^17"
   }
 }
