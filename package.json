@@ -33,7 +33,7 @@
   "dependencies": {
     "@babel/eslint-parser": ">= 7",
     "@stylistic/eslint-plugin": "^5",
-    "eslint": ">= 7",
+    "eslint": "^7 || ^8 || ^9",
     "eslint-plugin-html": "^8",
     "eslint-plugin-import": "^2",
     "eslint-plugin-lit": "^2",
