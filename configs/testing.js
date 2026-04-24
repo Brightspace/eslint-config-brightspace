@@ -11,7 +11,6 @@ export default [
 		'rules': {
 			'mocha/consistent-spacing-between-blocks': 'off',
 			'mocha/max-top-level-suites': 'off',
-			'mocha/no-identical-title': 'warn',
 			'mocha/no-exclusive-tests': 'error',
 			'mocha/no-mocha-arrows': 'off',
 			'mocha/no-return-from-async': 'error',
