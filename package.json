@@ -37,8 +37,9 @@
     "eslint-plugin-html": "^8",
     "eslint-plugin-import": "^2",
     "eslint-plugin-lit": "^2",
-    "eslint-plugin-sort-class-members": "^1",
+    "eslint-plugin-mocha": "^11",
     "eslint-plugin-react": "^7",
+    "eslint-plugin-sort-class-members": "^1",
     "globals": "^17"
   }
 }
