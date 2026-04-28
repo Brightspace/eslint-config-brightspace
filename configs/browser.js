@@ -25,8 +25,8 @@ export default [
 			},
 		},
 		rules: {
-			'arrow-spacing': 2,
-			'no-confusing-arrow': 2,
+			'@stylistic/arrow-spacing': 2,
+			'@stylistic/no-confusing-arrow': 2,
 			'no-duplicate-imports': 2,
 			'no-useless-constructor': 2,
 			'prefer-arrow-callback': 2,
