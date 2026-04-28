@@ -25,8 +25,7 @@ export default [
 			},
 		},
 		rules: {
-			'arrow-spacing': 2,
-			'no-confusing-arrow': 2,
+			'no-console': ['error', { 'allow': ['warn', 'error'] }],
 			'no-duplicate-imports': 2,
 			'no-useless-constructor': 2,
 			'prefer-arrow-callback': 2,
@@ -36,7 +35,8 @@ export default [
 			'strict': [2, 'never'],
 			'import/extensions': ['error', 'ignorePackages'],
 			'import/no-absolute-path': 2,
-			'no-console': ['error', { 'allow': ['warn', 'error'] }],
+			'@stylistic/arrow-spacing': 2,
+			'@stylistic/no-confusing-arrow': 2,
 			...getSortMemberRules()
 		}
 	}
