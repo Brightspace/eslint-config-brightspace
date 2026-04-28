@@ -43,7 +43,12 @@ export default [js.configs.recommended, {
 		'@stylistic/quotes': [2, 'single', { 'avoidEscape': true }], // nr
 		'@stylistic/semi': 2, // nr
 		'@stylistic/space-before-blocks': [2, 'always'], // nr
-		'@stylistic/space-before-function-paren': [2, 'never'], //nr
+		'@stylistic/space-before-function-paren': [2, {
+			'anonymous': 'never',
+			'named': 'never',
+			'asyncArrow': 'never',
+			'catch': 'always'
+		}], //nr
 		'@stylistic/space-in-parens': [2, 'never'],
 		'@stylistic/space-infix-ops': 2 // nr
 	}
