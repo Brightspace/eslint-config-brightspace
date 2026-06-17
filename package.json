@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/Brightspace/eslint-config-brightspace",
   "dependencies": {
-    "@babel/eslint-parser": ">= 7",
+    "@babel/eslint-parser": "^7",
     "@stylistic/eslint-plugin": "^5",
     "eslint": "^7 || ^8 || ^9",
     "eslint-plugin-html": "^8",
