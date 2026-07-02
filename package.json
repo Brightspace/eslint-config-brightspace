@@ -33,7 +33,6 @@
   "dependencies": {
     "@babel/eslint-parser": "^8",
     "@stylistic/eslint-plugin": "^5",
-    "eslint": "^9",
     "eslint-plugin-html": "^8",
     "eslint-plugin-import": "^2",
     "eslint-plugin-lit": "^2",
@@ -41,5 +40,8 @@
     "eslint-plugin-react": "^7",
     "eslint-plugin-sort-class-members": "^1",
     "globals": "^17"
+  },
+  "peerDependencies": {
+    "eslint": "^9"
   }
 }
