@@ -30,6 +30,9 @@
     "url": "https://github.com/Brightspace/eslint-config-brightspace/issues"
   },
   "homepage": "https://github.com/Brightspace/eslint-config-brightspace",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "dependencies": {
     "@babel/eslint-parser": "^8",
     "@stylistic/eslint-plugin": "^5",
